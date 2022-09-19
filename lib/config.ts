@@ -100,11 +100,17 @@ export const navigationLinks: Array<NavigationLink | null> = getSiteConfig(
 // Optional site search
 export const isSearchEnabled: boolean = getSiteConfig('isSearchEnabled', true)
 
-// Optional site search
+// Optionally set header theme button visibility
 export const headerDarkModeButton: boolean = getSiteConfig('headerDarkModeButton', true)
 
-// Optional site search
+// Optionally set footer theme button visibility
 export const footerDarkModeButton: boolean = getSiteConfig('footerDarkModeButton', true)
+
+// Optionally set github project button visibility
+export const githubShareButton: boolean = getSiteConfig('githubShareButton', true)
+
+// Optionally force set a theme
+export const forceTheme: boolean = getSiteConfig('forceTheme', true)
 
 // ----------------------------------------------------------------------------
 

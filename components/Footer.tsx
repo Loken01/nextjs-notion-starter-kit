@@ -31,6 +31,12 @@ export const FooterImpl: React.FC = () => {
     setHasMounted(true)
   }, [])
 
+  if(config.forceTheme !== undefined)
+  {
+      if(isDarkMode == config.forceTheme)
+        toggleDarkMode();
+  }
+
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>

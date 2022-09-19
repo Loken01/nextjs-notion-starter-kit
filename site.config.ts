@@ -1,4 +1,3 @@
-import { footerDarkModeButton } from 'lib/config'
 import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
@@ -57,5 +56,9 @@ export default siteConfig({
       pageId: '889ec72882a541729241d652dea58050',
       url: 'about'
     }
-  ]
+  ],
+  footerDarkModeButton: false,
+  headerDarkModeButton: false,
+  githubShareButton: false,
+  forceTheme: false
 })

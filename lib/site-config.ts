@@ -35,6 +35,8 @@ export interface SiteConfig {
 
   headerDarkModeButton?: boolean
   footerDarkModeButton?: boolean
+  githubShareButton?: boolean
+  forceTheme?: boolean
 }
 
 export interface NavigationLink {
