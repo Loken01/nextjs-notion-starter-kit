@@ -36,7 +36,7 @@ export const FooterImpl: React.FC = () => {
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>
 
       <div className={styles.settings}>
-        {hasMounted && (
+        {config.footerDarkModeButton && hasMounted && (
           <a
             className={styles.toggleDarkMode}
             href='#'

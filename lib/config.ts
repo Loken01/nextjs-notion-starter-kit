@@ -100,6 +100,12 @@ export const navigationLinks: Array<NavigationLink | null> = getSiteConfig(
 // Optional site search
 export const isSearchEnabled: boolean = getSiteConfig('isSearchEnabled', true)
 
+// Optional site search
+export const headerDarkModeButton: boolean = getSiteConfig('headerDarkModeButton', true)
+
+// Optional site search
+export const footerDarkModeButton: boolean = getSiteConfig('footerDarkModeButton', true)
+
 // ----------------------------------------------------------------------------
 
 // Optional redis instance for persisting preview images

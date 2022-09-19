@@ -32,6 +32,9 @@ export interface SiteConfig {
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
+
+  headerDarkModeButton?: boolean
+  footerDarkModeButton?: boolean
 }
 
 export interface NavigationLink {
