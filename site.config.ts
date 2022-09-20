@@ -25,8 +25,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: null,
-  defaultPageCover: null,
+  defaultPageIcon: 'https://noelwatters.xyz/page-icon.png',
+  defaultPageCover: 'https://noelwatters.xyz/page-cover.jpg',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
@@ -41,10 +41,10 @@ export default siteConfig({
   // any pages defined here will override their default URL paths
   // example:
   //
-  pageUrlOverrides: {
-    '/about': '889ec72882a541729241d652dea58050'
-  },
-  //pageUrlOverrides: null,
+  // pageUrlOverrides: {
+  //   '/about': '889ec72882a541729241d652dea58050'
+  // },
+  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages

@@ -6,7 +6,7 @@ import { Header, Breadcrumbs, Search, useNotionContext } from 'react-notion-x'
 import * as types from 'notion-types'
 
 import { useDarkMode } from 'lib/use-dark-mode'
-import { navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
+import { navigationStyle, navigationLinks, isSearchEnabled, headerDarkModeButton } from 'lib/config'
 
 import styles from './styles.module.css'
 
@@ -22,7 +22,13 @@ const ToggleThemeButton = () => {
     toggleDarkMode()
   }, [toggleDarkMode])
 
+  if(headerDarkModeButton !== undefined)
+    if(!headerDarkModeButton)
+      return null;
+
+
   return (
+
     <div
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
       onClick={onToggleTheme}
